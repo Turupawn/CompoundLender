@@ -27,11 +27,10 @@ contract CometLenderTest is Test {
 
         skip(50 days);
 
-
         cometLender.unstake(deposit_amount);
 
         vm.stopPrank();
 
-        cometLender.withdraw(0.000001 ether);
+        cometLender.withdraw(100);
     }
 }
